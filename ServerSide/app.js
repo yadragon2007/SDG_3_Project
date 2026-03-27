@@ -1,9 +1,9 @@
 const express = require('express')
-const app = express()
+const app = express() 
 const port = 8080
 
 const WebSocket = require('ws');
-const wss = new WebSocket.Server({ port: 8000 });
+const wss = new WebSocket.Server({ port: 8000 , host: '0.0.0.0' });
 
 
 app.get('/', (req, res) => {
